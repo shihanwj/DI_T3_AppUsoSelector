@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import es.ieslosmontecillos.componentes_weishihan.SelectorDeslizamiento?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="es.ieslosmontecillos.appusoselector.APPUsoSelectorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="lbTitulo" text="SELECTORES" style="-fx-font-size: 20; -fx-text-fill: red"/>
+    <SelectorDeslizamiento fx:id="selector1" onAction="#selectorPulsado"/>
+    <SelectorDeslizamiento fx:id="selector2" onAction="#selectorPulsado"/>
+    <Label fx:id="lbSelector" style="-fx-text-fill: green"/>
+
+</VBox>
